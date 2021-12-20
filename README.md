@@ -14,6 +14,8 @@ Step 3: package.json and create file; app.js
     "start": "nodemon app.js"
   }
 
+Step 4: mongo for npm install mongoose
+
 npm start for listening to the server with localhost:3000
 
 Source: Dev Ed
