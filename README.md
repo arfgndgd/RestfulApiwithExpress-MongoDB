@@ -20,19 +20,19 @@ Step 4: mongo for npm install mongoose
 npm start for listening to the server with localhost:3000
 
 Get All Post
-GET: http://localhost:3000/posts/
+GET: localhost:3000/posts/
 
 Insert a Post 
-POST: http://localhost:3000/posts/
+POST: localhost:3000/posts/
 
 Update a Post
-PATCH: http://localhost:3000/posts/<id>
+PATCH: localhost:3000/posts/<id>
 
 Specific a Post by Id
-GET: http://localhost:3000/posts/<id>
+GET: localhost:3000/posts/<id>
 
 Delete a Post 
-DELETE: http://localhost:3000/posts/<id>
+DELETE: localhost:3000/posts/<id>
 
 
   
