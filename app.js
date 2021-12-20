@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 require('dotenv/config');
 
 // Middlewares
@@ -8,6 +9,7 @@ require('dotenv/config');
 //     console.log('This is a middleware running')
 // })
 
+app.use(bodyParser.json());
 
 // Import Routes
 const postsRoute = require('./routes/posts');
@@ -27,9 +29,11 @@ app.get('/', (req, res) => {
 // Connect To Db
 mongoose.connect(
     process.env.DB_CONNECTION,
-    { useNewUrlParser: true},
+    { useNewUrlParser: true,
+        useUnifiedTopology: true,
+     },
+    
     () => console.log('connected to DB!')
 );
 
-// Listening to the server
 app.listen(3000);
