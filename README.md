@@ -19,6 +19,7 @@ Step 4: mongo for npm install mongoose
 
 npm start for listening to the server with localhost:3000
 
+
 Get All Post
 
 GET: localhost:3000/posts/
